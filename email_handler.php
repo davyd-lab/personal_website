@@ -5,7 +5,7 @@
   //Email information
   $admin_email = "david.ethier@gmail.com";
   $email = $_REQUEST['email'];
-  $subject = $_REQUEST['subject'];
+  $subject = "Message from DummyEggs.com"
   $comment = $_REQUEST['message'];
   
   //send email
