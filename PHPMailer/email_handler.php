@@ -27,8 +27,8 @@ $mail->Host = "chi-node24.websitehostserver.net";  // specify main and backup se
 $mail->SMTPAuth = true;     // turn on SMTP authentication
 
 // When sending email using PHPMailer, you need to send from a valid email address
-$mail->Username = "d@davidethier.com";  // SMTP username
-$mail->Password = "L0ngp@ssw0rd"; // SMTP password
+$mail->Username = "xxx@xxx.com";  // SMTP username
+$mail->Password = "passwordhere"; // SMTP password
 
 // $email is the user's email address the specified
 // on our contact us page. We set this variable at
