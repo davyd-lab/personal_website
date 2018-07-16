@@ -235,6 +235,9 @@ hr{
   .w3-hide-small{
     display:none!important
   }
+  .top-header{
+    padding:5px 16px;
+  }
 }
 
 @media (min-width:993px){
