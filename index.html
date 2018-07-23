@@ -23,6 +23,13 @@
         <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
         <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
         <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+        <div class="color-palettes">
+          <a id="red-palette" class="pallette-choice"></a>
+          <a id="blue-palette" class="pallette-choice"></a>
+          <a id="green-palette" class="pallette-choice"></a>
+          <a id="violet-palette" class="pallette-choice"></a>
+          <a id="grey-palette" class="pallette-choice"></a>
+        </div>
       </div>
     </nav>
     <!-- Page Content -->
@@ -208,7 +215,8 @@ function myMap()
 
 // Open and close sidebar
 function openNav() {
-    document.getElementById("mySidebar").style.width = "65%";
+    //document.getElementById("mySidebar").style.width = "65%";
+    document.getElementById("mySidebar").classList.add("open-nav");
     document.getElementById("mySidebar").style.display = "block";
 }
 
