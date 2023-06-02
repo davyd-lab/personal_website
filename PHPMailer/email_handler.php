@@ -22,13 +22,13 @@ $mail = new PHPMailer();
 // set mailer to use SMTP
 $mail->IsSMTP();
 
-$mail->Host = "chi-node24.websitehostserver.net";  // specify main and backup server
+$mail->Host = "mail.cactastic.com";  // specify main and backup server
 
 $mail->SMTPAuth = true;     // turn on SMTP authentication
 
 // When sending email using PHPMailer, you need to send from a valid email address
-$mail->Username = "email@domain.com";  // SMTP username
-$mail->Password = "passwordhere"; // SMTP password
+$mail->Username = "david@cactastic.com";  // SMTP username
+$mail->Password = "L0ngp@ssdavid"; // SMTP password
 
 // $email is the user's email address the specified
 // on our contact us page. We set this variable at
@@ -38,7 +38,7 @@ $mail->From = $email;
 $mail->FromName = $nameFrom;
 
 // below we want to set the email address we will be sending our email to.
-$mail->AddAddress("d@davidethier.com", "David Ethier");
+$mail->AddAddress("david@cactastic.com", "David Ethier");
 
 // set word wrap to 50 characters
 $mail->WordWrap = 50;

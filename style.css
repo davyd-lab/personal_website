@@ -106,9 +106,7 @@ hr{
 .w100{
   width:100%;
 }
-#portfolio svg{
-  fill: #757575;
-}
+
 .w3-button{
   border:none;
   display:inline-block;
@@ -147,7 +145,7 @@ hr{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('images/david.jpg');
+    background-image: url('images/DavidWorkCropped.JPG');
     min-height: 100%;
 }
 .w3-animate-right{
@@ -424,3 +422,235 @@ footer i{
 .w3-bar-item{
   padding:8px 0!important;
 }
+.footerbg{
+    background: url(images/thorns.jpg);
+}
+#isolation-layer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 1; 
+}
+/*Skills infographic */
+
+    @media (max-width: 1380px) {
+      .resume .resume-summary {
+        padding: 0px; } }
+  .resume .resume-block {
+    position: relative;
+    border-top: 1px dotted #d7d7d7;
+    margin: 10px 0 20px 0;
+    padding-top: 35px; }
+    .resume .resume-block:before, .resume .resume-block:after {
+      content: " ";
+      display: table; }
+    .resume .resume-block:after {
+      clear: both; }
+
+    .resume .resume-block .resume-education--desktop,
+    .resume .resume-block .resume-jobs--desktop {
+      display: block;
+      margin-top: 30px; }
+      @media (max-width: 1380px) {
+        .resume .resume-block .resume-education--desktop,
+        .resume .resume-block .resume-jobs--desktop {
+          display: none; } }
+    .resume .resume-block .resume-education--mobile,
+    .resume .resume-block .resume-jobs--mobile {
+      display: none; }
+      @media (max-width: 1380px) {
+        .resume .resume-block .resume-education--mobile,
+        .resume .resume-block .resume-jobs--mobile {
+          display: block;
+          margin: 30px 0; } }
+    .resume .resume-block .resume-skills {
+      float: left;
+      text-align: left; }
+      .resume .resume-block .resume-skills ul {
+        padding: 0px;
+        margin: 20px 0 0 0; }
+        .resume .resume-block .resume-skills ul li {
+          list-style-type: none;
+          text-align: right;
+          height: 17px;
+          margin: 0 10px 0 0;
+          padding-right: 10px;
+          font-style: italic;
+          font-family: Georgia;
+          font-weight: bold;
+          font-size: 11px;
+          background: url("images/dash.jpg") no-repeat 100% 50%; }
+          @media (max-width: 991px) {
+            .resume .resume-block .resume-skills ul li {
+              font-size: 10px; } }
+    .resume .resume-block .resume-jobs-window {
+      background-color: #FFFFFF;
+      position: relative;
+      z-index: 0; }
+      .resume .resume-block .resume-jobs-window .resume-jobs-wrapper {
+        overflow: hidden;
+        position: relative;
+        max-width: 1040px;
+        height: 470px; }
+        .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .next_container, .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .prev_container {
+          z-index: 200;
+          width: 100px;
+          height: 480px;
+          background-color: rgba(255, 255, 255, 0.8);
+          position: absolute;
+          top: 0px;
+          right: 0px; }
+          .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .next_container .next, .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .prev_container .next, .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .prev_container .previous {
+            z-index: 400;
+            padding: 228px 20px 0 0px;
+            float: right; }
+            .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .next_container .next i, .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .prev_container .next i, .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .prev_container .previous i {
+              cursor: pointer;
+              font-size: 40px; }
+        .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .prev_container {
+          background-color: rgba(255, 255, 255, 0.8);
+          display: none;
+          left: 0px; }
+          .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .prev_container .previous {
+            padding: 228px 0px 0 20px;
+            float: left; }
+        .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .resume-jobs-container {
+          left: 0;
+          position: absolute;
+          top: 0;
+          z-index: 100; }
+          .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .resume-jobs-container .resume-jobs-slide {
+            width: 1200px; }
+            .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .resume-jobs-container .resume-jobs-slide .table-row {
+              width: auto; }
+              .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .resume-jobs-container .resume-jobs-slide .table-row .table-header, .resume .resume-block .resume-jobs-window .resume-jobs-wrapper .resume-jobs-container .resume-jobs-slide .table-row .table-data {
+                width: 16%; }
+figure {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: flex-start; }
+  @media (max-width: 1380px) {
+    figure {
+      flex-direction: column; } }
+  figure p {
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-family: "Archer-Book", Georgia, Serif;
+    color: #000;
+    font-size: 10px;
+    z-index: 100;
+    padding: 0px;
+    margin: 0px; }
+  figure .bar {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0px;
+    font-style: italic;
+    font-size: 11px;
+    text-align: center;
+    z-index: 300; }
+    figure .bar .graph-header {
+      position: absolute;
+      top: 73px;
+      height: 18px;
+      left: 0px;
+      right: 0px; }
+  figure > div {
+    margin-top: 25px;
+    font-size: 12px;
+    position: relative; }
+    @media (max-width: 1380px) {
+      figure > div {
+        height: auto;
+        width: 100%; } }
+    figure > div.frontend .bar {
+      width: 14%; }
+      figure > div.frontend .bar .graph-header {
+        background-color: #f77c7f; }
+        figure > div.frontend .bar .graph-header.dark {
+          border-right: 15px solid #ff3f18; }
+    figure > div.programming .bar {
+      width: 25%; }
+      figure > div.programming .bar .graph-header {
+        background-color: #fd835e; }
+        figure > div.programming .bar .graph-header.dark {
+          border-right: 15px solid #ffb317; }
+    figure > div.design .bar {
+      width: 25%; }
+      figure > div.design .bar .graph-header {
+        background-color: #ffdd4d; }
+        figure > div.design .bar .graph-header.dark {
+          border-right: 15px solid #c1e31a; }
+    figure > div.additional .bar {
+      width: 50%; }
+      figure > div.additional .bar .graph-header {
+        background-color: #26c6d6; }
+        figure > div.additional .bar .graph-header.dark {
+          border-right: 15px solid #4fabec; }
+    figure > div .beginner {
+      height: 98px;
+      width: 8px;
+      margin: 0 auto;
+      border: 0px;
+      text-align: center;
+      position: relative;
+      background: url("images/graph_sprite.png") -75px 0px no-repeat; }
+      figure > div .beginner.alt {
+        height: 115px; }
+        figure > div .beginner.alt div {
+          position: absolute;
+          bottom: 0px;
+          left: 3px; }
+    figure > div .intermediate {
+      height: 98px;
+      width: 8px;
+      margin: 0 auto;
+      border: 0px;
+      text-align: center;
+      position: relative;
+      background: url("images/graph_sprite.png") -50px 0px no-repeat; }
+      figure > div .intermediate.alt {
+        height: 115px; }
+        figure > div .intermediate.alt div {
+          position: absolute;
+          bottom: 0px;
+          left: 3px; }
+    figure > div .advanced {
+      height: 98px;
+      width: 8px;
+      margin: 0 auto;
+      border: 0px;
+      text-align: center;
+      position: relative;
+      background: url("images/graph_sprite.png") -25px 0px no-repeat; }
+      figure > div .advanced.alt {
+        height: 115px; }
+        figure > div .advanced.alt div {
+          position: absolute;
+          bottom: 0px;
+          left: 3px; }
+    figure > div .expert {
+      height: 98px;
+      width: 8px;
+      margin: 0 auto;
+      border: 0px;
+      text-align: center;
+      position: relative;
+      background: url("images/graph_sprite.png") 0px 0px no-repeat; }
+      figure > div .expert.alt {
+        height: 115px; }
+        figure > div .expert.alt div {
+          position: absolute;
+          bottom: 0px;
+          left: 3px; }

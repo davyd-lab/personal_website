@@ -11,18 +11,23 @@
   <body>
     <!-- Sidebar with image -->
     <nav class="img-sidebar w3-hide-medium w3-hide-small">
-      <div class="bgimg w3-greyscale-max"></div>
+      <div class="bgimg"></div>
     </nav>
     <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+      <div id="isolation-layer"></div>
     <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" id="mySidebar">
       <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright">
       <i class="fa fa-remove"></i>
       </a>
       <div class="w3-bar-block w3-center">
         <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-        <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Experience</a>
         <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
         <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+          
+        <a href="https://jsfiddle.net/user/Davyd/fiddles/" target="_blank"><i class="fa fa-jsfiddle w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/david-ethier" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+          <!--
         <div class="color-palettes">
           <a id="red-palette" class="pallette-choice"></a>
           <a id="blue-palette" class="pallette-choice"></a>
@@ -30,24 +35,41 @@
           <a id="violet-palette" class="pallette-choice"></a>
           <a id="grey-palette" class="pallette-choice"></a>
         </div>
+-->
       </div>
     </nav>
     <!-- Page Content -->
-    <div class="w3-main w3-padding-large">
+    <div class="resume w3-main w3-padding-large">
       <!-- Menu icon to open sidebar -->
       <span class="w3-button open-nav-icon w3-white w3-xxlarge w3-text-grey w3-hover-text-black" onclick="openNav()"><i class="fa fa-bars"></i></span>
       <!-- Header -->
       <header class="w3-container w3-center top-header" id="home">
         <h1 class="w3-jumbo"><b>David Ethier</b></h1>
         <p>Frontend Web Developer</p>
-        <img src="images/david.jpg" class="w3-image w3-hide-large w3-hide-small w3-round w3-greyscale-max" style="display:block;width:60%;margin:auto;">
-        <img src="images/david.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round w3-greyscale-max" width="1000" height="1333">
+        <img src="images/DavidWorkCropped.JPG" class="w3-image w3-hide-large w3-hide-small w3-round " style="display:block;width:60%;margin:auto;">
+        <img src="images/DavidWorkCropped.JPG" class="w3-image w3-hide-large w3-hide-medium w3-round " width="1000" height="1333">
         <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-        <i class="fa fa-download"></i> Download Resume
+        <i class="fa fa-download"></i> <a href="images/ResumeEthier.pdf" download>Download Resume</a>
         </button>
       </header>
       <!-- Portfolio Section -->
-      <div class="w3-padding-32 w3-content" id="portfolio">
+      
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <h2 class="w3-text-black">About</h2>
+        <hr class="w3-opacity">
+        <p>
+        Hello! I'm a frontend web developer specializing in website personalization and AB testing. With a deep understanding of HTML, CSS, and JavaScript, I excel at turning design mockups into fully functional and visually appealing websites.
+</p><p>
+I'm dedicated to delivering exceptional user experiences, and I take pride in my ability to ensure that the websites I develop match the original designs precisely. My attention to detail and passion for staying up-to-date with the latest web technologies and trends allow me to create websites that not only look great but also drive conversions and revenue.
+</p><p>
+Over the years, I've worked extensively on personalizing website experiences to cater to individual user needs and preferences. I'm also experienced in conducting AB tests to measure the impact of design and content changes on user behavior and conversions.
+</p>
+
+          <p>
+If you're looking for a frontend developer with a deep understanding of web development and a commitment to delivering exceptional websites that drive results, let's connect and explore how we can work together!
+        </p>
+          <div class="w3-padding-32 w3-content" id="portfolio">
         <h2 class="w3-text-black">Brands I've Worked For</h2>
         <hr class="w3-opacity">
         <!-- Grid for photos -->
@@ -93,40 +115,133 @@
             </div>
           </div>
           <div class="w3-half">
-            <img class="w100" src="images/cpa.jpg">
-            <img class="w3-greyscale-max w100" src="images/am-logo-lg.png">
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_3" x="0px" y="0px" viewBox="0 0 210 45" xml:space="preserve">
-                <path xmlns="http://www.w3.org/2000/svg" class="st0" d="M41.9,15.8h3.8L45,20.3h-3.8l-1.4,9.9h-6.1L37,6.6h10.4l-0.7,4.7h-4.3L41.9,15.8z M61,20.5  c0,0.4-0.1,1.6-0.3,3.5l-0.9,6.2h-5.7l1.1-7.9c0.2-1.3,0.2-2,0-2.3c-0.2-0.3-0.7-0.5-1.5-0.5l-1.5,10.7h-6.1l3.3-23.6h4.4  c2.9,0,4.8,0.1,5.8,0.3c1,0.2,1.8,0.8,2.3,1.7c0.5,0.9,0.6,2.4,0.3,4.4c-0.3,1.8-0.7,3.1-1.2,3.7c-0.5,0.6-1.5,1-2.9,1.1  c1.2,0.3,1.9,0.7,2.3,1.2C60.8,19.6,61,20.1,61,20.5z M56.4,11c-0.2-0.2-0.7-0.4-1.4-0.4l-0.7,5.3c0.7,0,1.2-0.1,1.5-0.3  c0.3-0.2,0.5-0.8,0.7-1.8l0.2-1.3C56.7,11.7,56.6,11.2,56.4,11z M65,6.6l-3.3,23.6h6.1l3.3-23.6H65z M79.1,11.3h4.1l0.7-4.7H73.6  l-3.3,23.6h10.7l0.7-4.7h-4.5l0.7-5.2h3.8l0.6-4.5h-3.8L79.1,11.3z M94.6,6.6l-1.5,10.6L91.2,6.6h-5.1l-3.3,23.6h5.1l1.5-10.7  L91,30.2h5.4l3.3-23.6H94.6z M115.7,10.4c0,0.8-0.1,2.3-0.4,4.5l-1.2,8.3c-0.3,2.1-0.6,3.5-0.9,4.3s-0.7,1.3-1.3,1.7  c-0.6,0.4-1.2,0.7-2,0.8c-0.8,0.2-1.9,0.2-3.3,0.2h-7.8l3.3-23.6h4.6c3,0,5,0.1,6,0.4c1,0.3,1.7,0.7,2.2,1.3  C115.5,9,115.7,9.6,115.7,10.4z M109.5,11.5c0-0.3-0.2-0.5-0.4-0.7c-0.2-0.1-0.7-0.2-1.3-0.2l-2.2,15.5c0.9,0,1.5-0.2,1.7-0.5  c0.3-0.4,0.5-1.3,0.7-2.9l1.3-9.2C109.5,12.5,109.6,11.8,109.5,11.5z M124.7,11.3h4.3l0.7-4.7h-10.4l-3.3,23.6h6.1l1.4-9.9h3.8  l0.6-4.5h-3.8L124.7,11.3z M137.8,6.6h-6.1l-3.3,23.6h6.1L137.8,6.6z M153.5,6.6h-5.1l-1.5,10.6l-1.9-10.6h-5.1l-3.3,23.6h5.1  l1.5-10.7l1.7,10.7h5.4L153.5,6.6z M165.7,29.1c-0.6,0.4-1.2,0.7-2,0.8c-0.8,0.2-1.9,0.2-3.3,0.2h-7.8L156,6.6h4.6c3,0,5,0.1,6,0.4  c1,0.3,1.7,0.7,2.2,1.3c0.5,0.6,0.7,1.3,0.7,2.1c0,0.8-0.1,2.3-0.4,4.5l-1.2,8.3c-0.3,2.1-0.6,3.5-0.9,4.3  C166.6,28.2,166.2,28.7,165.7,29.1z M163.2,11.5c0-0.3-0.2-0.5-0.4-0.7c-0.2-0.1-0.7-0.2-1.3-0.2l-2.2,15.5c0.9,0,1.5-0.2,1.7-0.5  c0.3-0.4,0.5-1.3,0.7-2.9l1.3-9.2C163.2,12.5,163.3,11.8,163.2,11.5z M177.5,11.3h4.1l0.7-4.7H172l-3.3,23.6h10.7l0.7-4.7h-4.5  l0.7-5.2h3.8l0.6-4.5h-3.8L177.5,11.3z M196.9,8.6c0.5,0.9,0.6,2.4,0.3,4.4c-0.3,1.8-0.7,3.1-1.2,3.7s-1.5,1-2.9,1.1  c1.2,0.3,1.9,0.7,2.3,1.2c0.3,0.5,0.5,1,0.6,1.4c0,0.4-0.1,1.6-0.3,3.5l-0.9,6.2h-5.7l1.1-7.9c0.2-1.3,0.2-2,0-2.3  c-0.2-0.3-0.7-0.5-1.5-0.5l-1.5,10.7h-6.1l3.3-23.6h4.4c2.9,0,4.8,0.1,5.8,0.3C195.6,7.1,196.4,7.7,196.9,8.6z M191.4,11  c-0.2-0.2-0.7-0.4-1.4-0.4l-0.7,5.3c0.7,0,1.2-0.1,1.5-0.3c0.3-0.2,0.5-0.8,0.7-1.8l0.2-1.3C191.7,11.7,191.6,11.2,191.4,11z   M134.5,39L134.5,39l-3.3-5.1h-0.9v6.2h0.8v-5h0l3.3,5h0.9V34h-0.8V39z M139.9,37.4h3.2v-0.7h-3.2v-2h3.5V34h-4.3v6.2h4.3v-0.7h-3.5  V37.4z M146.2,34.7h2.1v5.5h0.8v-5.5h2.1V34h-5V34.7z M159.5,39.2L159.5,39.2l-1.4-5.2h-0.9l-1.4,5.2h0l-1.2-5.2h-0.8l1.6,6.2h0.9  l1.4-5.2h0l1.4,5.2h0.9l1.7-6.2h-0.8L159.5,39.2z M170.2,35.9c0.1,0.4,0.2,0.8,0.2,1.2c0,0.4-0.1,0.8-0.2,1.2  c-0.1,0.4-0.3,0.7-0.6,1c-0.3,0.3-0.6,0.5-0.9,0.7c-0.4,0.2-0.8,0.3-1.3,0.3c-0.5,0-0.9-0.1-1.3-0.3c-0.4-0.2-0.7-0.4-0.9-0.7  c-0.3-0.3-0.4-0.7-0.6-1c-0.1-0.4-0.2-0.8-0.2-1.2c0-0.4,0.1-0.8,0.2-1.2c0.1-0.4,0.3-0.7,0.6-1c0.3-0.3,0.6-0.5,0.9-0.7  c0.4-0.2,0.8-0.3,1.3-0.3c0.5,0,0.9,0.1,1.3,0.3c0.4,0.2,0.7,0.4,0.9,0.7C169.9,35.1,170.1,35.5,170.2,35.9z M169.6,37.1  c0-0.3,0-0.6-0.1-0.9c-0.1-0.3-0.2-0.6-0.4-0.8c-0.2-0.2-0.4-0.4-0.7-0.6c-0.3-0.1-0.6-0.2-1-0.2c-0.4,0-0.7,0.1-1,0.2  c-0.3,0.1-0.5,0.3-0.7,0.6c-0.2,0.2-0.3,0.5-0.4,0.8c-0.1,0.3-0.1,0.6-0.1,0.9c0,0.3,0,0.6,0.1,0.9c0.1,0.3,0.2,0.6,0.4,0.8  c0.2,0.2,0.4,0.4,0.7,0.6c0.3,0.1,0.6,0.2,1,0.2c0.4,0,0.7-0.1,1-0.2c0.3-0.1,0.5-0.3,0.7-0.6c0.2-0.2,0.3-0.5,0.4-0.8  C169.5,37.7,169.6,37.4,169.6,37.1z M178.7,39.8c0,0.1,0.1,0.3,0.2,0.4H178c-0.1-0.1-0.1-0.2-0.1-0.3c0-0.1,0-0.2,0-0.4  c0-0.1,0-0.3,0-0.4c0-0.2,0-0.3-0.1-0.5c0-0.2-0.1-0.3-0.1-0.4c0-0.1-0.1-0.3-0.2-0.4c-0.1-0.1-0.2-0.2-0.3-0.2  c-0.1-0.1-0.3-0.1-0.5-0.1h-2v2.7h-0.8V34h2.9c0.6,0,1.1,0.1,1.4,0.4c0.3,0.3,0.5,0.7,0.5,1.2c0,0.4-0.1,0.7-0.3,1  c-0.2,0.3-0.4,0.5-0.8,0.6v0c0.2,0,0.3,0.1,0.4,0.2c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.1,0.1,0.2,0.1,0.4c0,0.1,0.1,0.3,0.1,0.4  c0,0.2,0,0.3,0,0.5c0,0.2,0,0.3,0,0.5C178.6,39.6,178.6,39.7,178.7,39.8z M177.7,36.3c0.1-0.1,0.1-0.3,0.1-0.6  c0-0.3-0.1-0.6-0.3-0.8c-0.2-0.2-0.5-0.3-0.8-0.3h-2.1v2.2h1.7c0.2,0,0.4,0,0.5,0c0.2,0,0.3-0.1,0.5-0.2  C177.5,36.6,177.6,36.4,177.7,36.3z M187.3,34h-1.1l-3.2,3.1V34h-0.8v6.2h0.8V38l1-1l2.3,3.2h1l-2.7-3.7L187.3,34z M194.5,37.2  c-0.2-0.1-0.4-0.2-0.6-0.3c-0.2-0.1-0.5-0.1-0.7-0.2c-0.2-0.1-0.5-0.1-0.7-0.2c-0.2,0-0.5-0.1-0.6-0.2c-0.2-0.1-0.3-0.2-0.5-0.3  c-0.1-0.1-0.2-0.3-0.2-0.5c0-0.2,0-0.4,0.1-0.5c0.1-0.1,0.2-0.2,0.3-0.3c0.1-0.1,0.3-0.1,0.4-0.2c0.2,0,0.3-0.1,0.5-0.1  c0.4,0,0.8,0.1,1.1,0.3c0.3,0.2,0.4,0.5,0.5,1h0.8c0-0.3-0.1-0.6-0.2-0.9c-0.1-0.2-0.3-0.5-0.5-0.6c-0.2-0.2-0.4-0.3-0.7-0.4  c-0.3-0.1-0.6-0.1-0.9-0.1c-0.3,0-0.6,0-0.8,0.1c-0.3,0.1-0.5,0.2-0.7,0.3c-0.2,0.1-0.4,0.3-0.5,0.6c-0.1,0.2-0.2,0.5-0.2,0.8  c0,0.3,0.1,0.5,0.2,0.7c0.1,0.2,0.3,0.3,0.5,0.5c0.2,0.1,0.4,0.2,0.6,0.3c0.2,0.1,0.5,0.1,0.7,0.2c0.2,0.1,0.5,0.1,0.7,0.2  c0.2,0.1,0.5,0.1,0.6,0.2c0.2,0.1,0.3,0.2,0.5,0.3c0.1,0.1,0.2,0.3,0.2,0.5c0,0.2,0,0.4-0.1,0.6c-0.1,0.1-0.2,0.3-0.4,0.3  c-0.2,0.1-0.3,0.1-0.5,0.2c-0.2,0-0.4,0.1-0.6,0.1c-0.2,0-0.5,0-0.7-0.1c-0.2-0.1-0.4-0.1-0.6-0.3c-0.2-0.1-0.3-0.3-0.4-0.5  c-0.1-0.2-0.2-0.4-0.2-0.7h-0.8c0,0.4,0.1,0.7,0.2,1c0.1,0.3,0.3,0.5,0.6,0.7c0.2,0.2,0.5,0.3,0.8,0.4c0.3,0.1,0.6,0.1,1,0.1  c0.3,0,0.6,0,0.9-0.1c0.3-0.1,0.5-0.2,0.8-0.3c0.2-0.1,0.4-0.3,0.6-0.6c0.1-0.2,0.2-0.5,0.2-0.9c0-0.3-0.1-0.6-0.2-0.8  C194.9,37.5,194.7,37.4,194.5,37.2z M205,8.8c0,0.4-0.1,0.8-0.2,1.2c-0.2,0.4-0.4,0.7-0.6,0.9c-0.3,0.3-0.6,0.5-0.9,0.6  c-0.3,0.1-0.7,0.2-1.1,0.2c-0.4,0-0.8-0.1-1.2-0.2c-0.4-0.2-0.7-0.4-0.9-0.6c-0.3-0.3-0.5-0.6-0.6-0.9c-0.1-0.4-0.2-0.8-0.2-1.2  c0-0.4,0.1-0.8,0.2-1.2c0.2-0.4,0.4-0.7,0.6-0.9c0.3-0.3,0.6-0.5,0.9-0.6c0.4-0.1,0.7-0.2,1.1-0.2c0.4,0,0.7,0.1,1.1,0.2  c0.3,0.1,0.7,0.3,0.9,0.6c0.3,0.3,0.5,0.6,0.6,0.9C204.9,8,205,8.4,205,8.8z M204.3,8.8c0-0.4-0.1-0.7-0.2-1  c-0.1-0.3-0.3-0.6-0.5-0.8c-0.2-0.2-0.4-0.4-0.7-0.5c-0.3-0.1-0.6-0.2-0.9-0.2c-0.3,0-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.7,0.5  c-0.2,0.2-0.4,0.5-0.5,0.8c-0.1,0.3-0.2,0.6-0.2,1c0,0.3,0.1,0.7,0.2,1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.4,0.4,0.7,0.5  c0.3,0.1,0.6,0.2,0.9,0.2c0.3,0,0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.7-0.5c0.2-0.2,0.4-0.5,0.5-0.8C204.3,9.5,204.3,9.2,204.3,8.8z   M202.5,9.1l0.9,1.4h-0.6L202,9.1h-0.5v1.4H201V7.2h1.2c0.4,0,0.7,0.1,0.9,0.2c0.2,0.1,0.3,0.4,0.3,0.7c0,0.3-0.1,0.5-0.2,0.7  C203,9,202.8,9,202.5,9.1z M202.4,8.6c0.1,0,0.2,0,0.2-0.1c0.1,0,0.1-0.1,0.2-0.2s0.1-0.2,0.1-0.3c0-0.1,0-0.2-0.1-0.2  c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.1-0.1-0.2-0.1c-0.1,0-0.2,0-0.2,0h-0.6v1h0.6C202.2,8.6,202.3,8.6,202.4,8.6z M27.6,10.8  c1.5,2.1,2.4,4.6,2.4,7.4c0,7.1-5.7,12.9-12.8,13c-3.3,0-6.3-1.2-8.6-3.2l2.2-8.1l4.4,0c0,0-0.4-0.5-0.6-1.1c-0.3-1,0-1.4,0-1.4  l-3.2,0l0.9-3.2c0.1-0.3,0.2-0.6,0.5-0.9c0.2-0.3,0.5-0.5,0.7-0.8c0.3-0.2,0.6-0.4,0.9-0.5c0.3-0.1,0.7-0.2,1-0.2  c0.3,0,0.6,0.1,0.9,0.2c0.3,0.1,0.5,0.3,0.6,0.5c0.2,0.2,0.2,0.5,0.3,0.8c0,0.3-0.3,1.9-0.4,1.9l2.5,0c0.1-0.2,0.5-2.2,0.4-2.8  c-0.1-0.6-0.3-1.2-0.6-1.6C19,10.2,18.5,9.8,18,9.6c-0.5-0.3-1.1-0.4-1.8-0.4c-0.7,0-1.4,0.1-2.1,0.4c-0.7,0.3-1.3,0.6-1.9,1.1  c-0.6,0.5-1.1,1-1.5,1.6c-0.4,0.6-0.7,1.2-0.9,1.9L9,17.3l-0.7,2.5l-1.7,6c-1.5-2.1-2.5-4.7-2.5-7.5c0-7.1,5.7-12.9,12.8-13  c3.3,0,6.4,1.2,8.7,3.3l-2.3,8.6l-3.2,0c0,0,0.1,0.5-0.3,1.3C19.6,19,19,19.7,19,19.7l3.7,0l-0.9,3.2c-0.1,0.3-0.2,0.6-0.5,0.9  c-0.2,0.3-0.5,0.5-0.7,0.8c-0.3,0.2-0.6,0.4-0.9,0.5c-0.3,0.1-0.7,0.2-1,0.2c-0.3,0-0.6-0.1-0.9-0.2c-0.3-0.1-0.5-0.3-0.6-0.5  c-0.2-0.2-0.2-0.5-0.3-0.8c0-0.3,0.3-1.9,0.4-1.9l-2.5,0c-0.1,0.2-0.5,2.2-0.4,2.8c0.1,0.6,0.3,1.2,0.6,1.6c0.3,0.5,0.7,0.8,1.3,1.1  c0.5,0.3,1.1,0.4,1.8,0.4c0.7,0,1.4-0.1,2.1-0.4c0.7-0.3,1.3-0.6,1.9-1.1c0.6-0.5,1.1-1,1.5-1.6c0.4-0.6,0.7-1.2,0.9-1.9l0.9-3.2  l0.7-2.5L27.6,10.8z M16.7,20.7c0,0,3.4-2.2,2.8-3.6c-0.6-1.4-1.9,0-2,0.1l0,0c0,0-0.8-1.5-2-0.1C14.3,18.4,16.7,20.7,16.7,20.7z"/>
-              </svg>
-            </div>
+            <img class="w100" src="images/cpass-logo.png">
+            <img class=" w100" src="images/american-meadows-logo.jpg">
+            
           </div>
           <!-- End photo grid -->
         </div>
         <!-- End Portfolio Section -->
       </div>
-      <!-- About Section -->
-      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-        <h2 class="w3-text-black">About</h2>
-        <hr class="w3-opacity">
-        <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
         <h3 class="w3-padding-16 w3-text-black">My Skills</h3>
-        <p class="w3-wide">HTML(5)</p>
-        <div class="w3-light-grey">
-          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
-        </div>
-        <p class="w3-wide">CSS(3)</p>
-        <div class="w3-light-grey">
-          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:90%">90%</div>
-        </div>
-        <p class="w3-wide">JavaScript</p>
-        <div class="w3-light-grey">
-          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
-        </div>
-        <br>
+          
+        <div class="resume-block">
+              <div class="resume-skills--desktop">
+                <div class="resume-skills">
+                  <ul>
+                    <li>expert</li>
+                    <li>advanced</li>
+                    <li>intermediate</li>
+                    <li>beginner</li>
+                  </ul>
+                </div>
+                <figure>
+                  <div class="frontend">
+                    <p>
+                      Front-end Technologies
+                    </p>
+                    <div class="bar">
+                      <div class="expert"></div>
+                      <div class="graph-header"></div>
+                      <label>HTML</label>
+                    </div>
+                    <div class="bar">
+                      <div class="expert alt"><div><img src="images/dots.jpg"></div></div>
+                      <div class="graph-header"></div>
+                      <label>CSS</label>
+                    </div>
+                    <div class="bar">
+                      <div class="intermediate"></div>
+                      <div class="graph-header"></div>
+                      <label>Animation</label>
+                    </div>
+                    <div class="bar">
+                      <div class="expert alt"><div><img src="images/dots.jpg"></div></div>
+                      <div class="graph-header"></div>
+                      <label>Responsive</label>
+                    </div>
+                    <div class="bar">
+                      <div class="intermediate"></div>
+                      <div class="graph-header"></div>
+                      <label>SASS</label>
+                    </div>
+                    <div class="bar">
+                      <div class="expert alt"><div><img src="images/dots.jpg"></div></div>
+                      <div class="graph-header dark"></div>
+                      <label>JavaScript</label>
+                    </div>
+                  </div>
+                  <div class="programming">
+                    <p>
+                      Programming
+                    </p>
+                    <div class="bar">
+                      <div class="beginner"></div>
+                      <div class="graph-header"></div>
+                      <label>React</label>
+                    </div>
+                    <div class="bar">
+                      <div class="beginner alt"><div><img src="images/dots.jpg"></div></div>
+                      <div class="graph-header"></div>
+                      <label>MySQL</label>
+                    </div>
+                    <div class="bar">
+                      <div class="beginner"></div>
+                      <div class="graph-header"></div>
+                      <label>PHP</label>
+                    </div>
+                    <div class="bar">
+                      <div class="intermediate alt"><div><img src="images/dots.jpg"></div></div>
+                      <div class="graph-header dark"></div>
+                      <label>APIs</label>
+                    </div>
+                  </div>
+                  <div class="design">
+                    <p>
+                      Personalization & Testing
+                    </p>
+                    <div class="bar">
+                      <div class="expert"></div>
+                      <div class="graph-header"></div>
+                      <label>Optimizely</label>
+                    </div>
+                    <div class="bar">
+                      <div class="expert"></div>
+                      <div class="graph-header"></div>
+                      <label>Campaign Setup</label>
+                    </div>
+                    <div class="bar">
+                      <div class="advanced"></div>
+                      <div class="graph-header dark"></div>
+                      <label>Audience Logic</label>
+                    </div>
+                    <div class="bar">
+                      <div class="intermediate"></div>
+                      <div class="graph-header dark"></div>
+                      <label>Tealium</label>
+                    </div>
+                  </div>
+                  <div class="additional">
+                    <p>
+                      People
+                    </p>
+                    <div class="bar">
+                      <div class="advanced alt"><div><img src="images/dots.jpg"></div></div>
+                      <div class="graph-header"></div>
+                      <label>Documentation</label>
+                    </div>
+                    <div class="bar">
+                      <div class="intermediate"></div>
+                      <div class="graph-header dark"></div>
+                      <label>Leading</label>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <!-- / Job history desktop -->
+            </div>
+          
+        <!-- 
         <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
           <div class="w3-quarter w3-section">
             <span class="w3-xlarge">8+</span><br>
@@ -144,16 +259,27 @@
             <span class="w3-xlarge">1000+</span><br>
             Cups of Coffee
           </div>
-        </div>
+        </div> -->
+          <p>I have extensive experience creating a wide variety of website designs for the companies I have worked with. These designs have included product feeds from API data, animations, carousels, personalized content, pop-ups, and a variety of templates and widgets. If you would like to see examples of my code, you can check out the source code of this website or visit my entries on <a href="https://jsfiddle.net/user/Davyd/fiddles/" target="_blank">JSFiddle</a>. Also, check out what i'm up to over on <a href="https://www.linkedin.com/in/david-ethier" target="_blank">LinkedIn</a>.</p>
+          
         <button class="w3-button w3-light-grey w3-padding-large w3-section">
-        <i class="fa fa-download"></i> Download Resume
+            <i class="fa fa-download"></i> <a href="images/ResumeEthier.pdf" download>Download Resume</a>
         </button>
         <!-- Testimonials -->
         <h3 class="w3-padding-24 w3-text-black">My Reputation</h3>
-        <img src="images/D-E.jpg" alt="DummyEggs.com Avatar" class="w3-left w3-circle w3-margin-right avatar w3-grayscale-max">
+                  <img src="images/jackie.jpeg" alt="Jackie Avatar" class="w3-left w3-circle w3-margin-right avatar">
+        <p><span class="w3-large 3-black w3-margin-right">Jackie Pareja</span> Engineering at GigaStar</p>
+        <p>David's exceptional technical depth and efficiency, have consistently earned him the position of Tech Lead for numerous front-end projects at Gap's startup brand, Athleta. He's like a wizard (and has been called one) when it comes to devising creative solutions for complex features, whether it's rapidly integrating a script via Optimizely for a marketing campaign or working with Gap's massive, old-school codebase to bring in some fresh tech.</p>
+        <p>What truly sets David apart is his ability to excel as both a team leader and a team player. This was most evident when we tackled a high-stakes issue critical to the smooth launch of Athleta Canada's soft-launch splash page. Even though the project was on my plate, David was right there with me, putting in the late nights and early mornings to make sure everything went smoothly.</p>
+        <p>I wholeheartedly recommend David for any position that requires technical expertise, creative problem-solving, and exceptional teamwork. He is an invaluable asset, and he will bring his unique blend of skills and dedication to any project or team he joins.</p>
+          
+        <img src="images/D-E.jpg" alt="DummyEggs.com Avatar" class="w3-left w3-circle w3-margin-right avatar">
         <p><span class="w3-large 3-black w3-margin-right">Melanie Brandstein & Kirk Williams</span> DummyEggs.com</p>
         <p>David is a consummate professional. His knowledge and patience combined make him a joy to work with. David is always there when he is needed and eager to solve problems which he does with lightning speed.</p>
         <p>He took our website from outdated to "on point" with ease, communicating in a friendly and transparent manner. We never felt like anything was too big or too little to ask for his help. He was able and willing to work with us as we requested, at times wanting him to just take the ball and run with it, and at other times wanting to understand and learn the changes that were occurring. After the website renewal and remodel, we needed to be able to make our own edits and be back in the driver's seat which he eased us back into seamlessly. We can't thank him enough for his patience, his friendship, and his skill. Our outdated website now looks perfect on any device and is running beautifully. -- Melanie Brandstein & Kirk Williams, DummyEggs.com</p>
+          
+          
+          
         <!-- End About Section -->
       </div>
       <!-- Contact Section -->
@@ -161,12 +287,12 @@
         <h2 class="w3-text-black">Contact Me</h2>
         <hr class="w3-opacity">
         <div class="w3-section">
-          <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>San Francico, CA, US, Earth</p>
+          <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Bay Area, CA, US, Earth</p>
           <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 415-716-6555</p>
-          <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%64%40%64%61%76%69%64%65%74%68%69%65%72%2E%63%6F%6D"><span class="e-mail" data-user="d" data-website="moc.reihtedivad"></span></a></p>
+          <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: <a href="#" onclick="decodeEmail();"><span class="e-mail" data-user="divad" data-website="moc.citsatcac"></span></a></p>
         </div>
         <!-- Google Map -->
-        <div id="googleMap" class="w3-greyscale-max"></div>
+        <div id="googleMap" class=""></div>
         <p>Lets get in touch. Send me a message:</p>
         <form action="PHPMailer/email_handler.php" method="post">
           <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="name" required></p>
@@ -182,13 +308,15 @@
         <!-- End Contact Section -->
       </div>
       <!-- Footer -->
-      <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+      <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge footerbg" style="margin:-24px">
         <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
           <i class="fa fa-instagram w3-hover-opacity"></i>
           <i class="fa fa-snapchat w3-hover-opacity"></i>-->
+        <!--
         <a href="https://stackoverflow.com/users/8787575/davyd" target="_blank"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>
         <a href="https://github.com/bimmin" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
         <a href="https://www.linkedin.com/in/david-ethier" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+          -->
         <!-- End footer -->
       </footer>
       <!-- END PAGE CONTENT -->
@@ -197,12 +325,17 @@
 </html>
 <!-- Add Google Maps -->
 <script>
+// email obfuscation
+function decodeEmail() {
+  var email = "moc.citsatcac@divad".split("").reverse().join("");
+  location.href = "mailto:" + email;
+}
 function myMap()
 {
   myCenter=new google.maps.LatLng(37.775024, -122.411156);
   var mapOptions= {
     center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
+    zoom:9, scrollwheel: false, draggable: false,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
@@ -218,10 +351,17 @@ function openNav() {
     //document.getElementById("mySidebar").style.width = "65%";
     document.getElementById("mySidebar").classList.add("open-nav");
     document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("isolation-layer").style.display = "block";
 }
 
 function closeNav() {
-    document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("isolation-layer").style.display = "none";
 }
+const isolationLayer = document.getElementById("isolation-layer");
+
+isolationLayer.addEventListener("click", () => {
+  closeNav()
+});
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5QXa3ykWC-iLvnFpZwI6btly-Sd4otLY&callback=myMap"></script>
