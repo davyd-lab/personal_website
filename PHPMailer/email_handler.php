@@ -27,8 +27,8 @@ $mail->Host = "mail.cactastic.com";  // specify main and backup server
 $mail->SMTPAuth = true;     // turn on SMTP authentication
 
 // When sending email using PHPMailer, you need to send from a valid email address
-$mail->Username = "david@cactastic.com";  // SMTP username
-$mail->Password = "L0ngp@ssdavid"; // SMTP password
+$mail->Username = "XXX";  // SMTP username
+$mail->Password = "XXX"; // SMTP password
 
 // $email is the user's email address the specified
 // on our contact us page. We set this variable at
